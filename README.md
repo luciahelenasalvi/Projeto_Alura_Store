@@ -1,9 +1,7 @@
 # Descrição do projeto "Alura Store"
 
 ### Visão Geral
-Este é um projeto de análise de dados de vendas de 4 lojas que constituem a rede Alura Store: uma das lojas deverá ser vendida e as análises possibilitarão concluir qual deve ser indicada. 
-
-Desenvolvido por Lúcia Helena Aparecida Rissi Salvi  - Módulo I Data Science Oracle Next Education | G9.
+Este é um projeto de análise de dados de vendas de 4 lojas que constituem a rede Alura Store: uma das lojas deverá ser vendida e as análises possibilitarão concluir qual deve ser recomendada. 
 
 ### Dados
 Foram recebidos quatro links de arquivos. Cada arquivo, referente à uma das lojas, tras os dados de vendas no período de 2020-2022 e o primeiro trimestre de 2023. 
@@ -23,10 +21,10 @@ Cada arquivo contém 12 colunas, a saber:
 12. **lon**: Longitude
 
 #### Formato dos arquivos
-A loja 1 possui uma base de dados com 12 colunas e 2359 vendas (linhas)
-A loja 2 possui uma base de dados com 12 colunas e 2359 vendas (linhas)
-A loja 3 possui uma base de dados com 12 colunas e 2359 vendas (linhas)
-A loja 4 possui uma base de dados com 12 colunas e 2358 vendas (linhas)
+* A loja 1 possui uma base de dados com 12 colunas e 2359 vendas (linhas)
+* A loja 2 possui uma base de dados com 12 colunas e 2359 vendas (linhas)
+* A loja 3 possui uma base de dados com 12 colunas e 2359 vendas (linhas)
+* A loja 4 possui uma base de dados com 12 colunas e 2358 vendas (linhas)
 
 
 
@@ -77,6 +75,7 @@ O desenvolvimento do notebook (Google Colab) foi realizado na linguagem Python, 
 * Frete médio sem frete gratuito por loja
 
 
+Desenvolvido por Lúcia Helena Aparecida Rissi Salvi  - Módulo I Data Science Oracle Next Education | G9.
 
 
 
