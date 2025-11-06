@@ -1,6 +1,4 @@
-# Atenção: Projeto em desenvolvimento
- 
- # Descrição do projeto "Alura Store"
+# Descrição do projeto "Alura Store"
 
 ### Visão Geral
 Este é um projeto de análise de dados de vendas de 4 lojas que constituem a rede Alura Store: uma das lojas deverá ser vendida e as análises possibilitarão concluir qual deve ser indicada. 
@@ -24,7 +22,16 @@ Cada arquivo contém 12 colunas, a saber:
 11. **lat**: Latitude - medidas geolocalização float
 12. **lon**: Longitude
 
+#### Formato dos arquivos
+A loja 1 possui uma base de dados com 12 colunas e 2359 vendas (linhas)
+A loja 2 possui uma base de dados com 12 colunas e 2359 vendas (linhas)
+A loja 3 possui uma base de dados com 12 colunas e 2359 vendas (linhas)
+A loja 4 possui uma base de dados com 12 colunas e 2358 vendas (linhas)
+
+
+
 ## Métricas
+Foram solicitadas a análises das métricas: 
 
 *   Faturamento total das lojas
 *   Categorias de produtos mais e menos vendidas
@@ -32,56 +39,43 @@ Cada arquivo contém 12 colunas, a saber:
 *   Produtos mais e menos vendidos
 *   Frete médio de cada loja
 
-*   quantidade de dados por conjunto.
-
 ## Procedimentos aplicados
-Em python, com a biblioteca Pandas e Matplot lib para gráficos. 
+O desenvolvimento do notebook (Google Colab) foi realizado na linguagem Python, utilizando a biblioteca Pandas - para análise -  e Matplotlib - para criação de gráficos. 
 
 *Passos iniciais*: 
 * Importação e leitura dos dados
-* Visualização de amostra dos dados (head/tail)
+* Visualização de amostra dos dados (funções head/tail)
 
 *Reconhecimento dos dados*
-* Número de linhas e colunas (shape/len)
-* Avaliação de nulos (info): Pela interferência negativa que podem causar, é preciso fazer o tratamento de dados nulos
-* Verificações da frequencia de cada valor por coluna (value_counts) e describe (contagem, número de valores únicos, mais frequentes, frequencia do mais frequente). 
-
+* Número de linhas e colunas (funçõesshape/len)
+* Avaliação de nulos (função info): Pela interferência negativa que podem causar, é preciso fazer o tratamento de dados nulos
+* Verificações da frequencia de cada valor por coluna (função value_counts); contagem, número de valores únicos, mais frequentes, frequencia do mais frequente (função describe)
 * Verificação do meses de 2023 (set : identifica valores únicos)
-* Frequencia, média, desvio padrão, valor mínimo e máximo e quartis (25,50 e 75%): describe para o dataframe inteiro. 
+* Frequencia, média, desvio padrão, valor mínimo e máximo e quartis (função describe aplicada ao dataframe)
+* Agrupamentos (groupby) e seleções (query)
 
 ## Análises ##
 ⦁	Faturamento total
+⦁	Faturamento por loja e ano
 ⦁	Número de vendas por loja e ano
-⦁	Faturamento por ano e loja
-⦁	ticket médio por ano e loja
+⦁	Ticket médio por loja e ano
+* Categorias de produtos
+* Vendas por categoria
+* Faturamento por loja das categorias mais vendidas
+* Percentual das categorias mais vendidas 
+* Média de avaliação das lojas
+* Média geral
+* Distribuição das notas
+* 10 produtos mais vendidos
+* 10 produtos menos vendidos
+* Frete médio por loja
+* Frete máximo por loja
+* Frete mínimo por loja
+* Frete mínimo sem casos de frete gratuito por loja
+* Frequência do frete gratuito
+* Percentual do frete gratuito
+* Frete médio sem frete gratuito por loja
 
-* vendas por categoria
-* categorias únicas 
-
-⦁	faturamento das lojas das categorias mais vendidas (moveis, eletrônicos e brinquedos)
-⦁	percentual das categorias vendidas
-⦁	percentual do faturamento e de vendas(mais vendidas)
-
-* media de avaliação das lojas
-* distribuição das notas a partir da média
-
-* 10 produtos mais e menos vendidos
-
-faturamento dos produtod mais vendidos
-faturamento dos produtos menos vendidos
-percentual do produtos mais vendidos
-percentual dos produtos menos vendidos
-
-
-+++++++++++++++++++++++++++
-frete médio
-
-frete máximo
-frete mínimo
-frequência de frete zero
-percentual de frete zero
-frete médio com frete gratuito
-frete médio sem frete gratuito
 
 
 
