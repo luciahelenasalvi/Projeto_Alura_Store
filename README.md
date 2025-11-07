@@ -1,44 +1,47 @@
 # Descrição do projeto "Alura Store"
 
 ### Visão Geral
-Este é um projeto de análise de dados de vendas de 4 lojas que constituem a rede Alura Store: uma das lojas deverá ser vendida e as análises possibilitarão concluir qual deve ser recomendada. 
+Trata-se de um projeto de análise de dados. A Alura Store é uma rede com 4 lojas de propriedade do Sr. João. A partir das análises dos dados fornecidos, será recomendada a venda de uma das unidades. 
 
 ### Dados
-Foram recebidos quatro links de arquivos. Cada arquivo, referente à uma das lojas, tras os dados de vendas no período de 2020-2022 e o primeiro trimestre de 2023. 
+Foram fornecidos quatro arquivos, via link, referentes às vendas de cada loja. Os dados abarcam o período de 2020-2022 e o primeiro trimestre de 2023. 
 
 Cada arquivo contém 12 colunas, a saber:
-1. **Produto**: nome do produto disponível para venda, como "Mesa de jantar", do tipo String (object).
-2. **Categoria do Produto**: nome das categorias de produtos, tais como: móveis, eletrônicos, brinquedos, eletrodomésticos, esporte e lazer, instrumentos musicais, livros e utilidades domésticas, do tipo String. 
-3. **Preço**: preço do produto, em ponto flutuante (float).
-4. **Frete**: frete do produto, em ponto flutuante (float)
-5. **Data da compra**: data da aquisição do produto, em string, no formato dd/mm/aaaa. 
-6. **Vendedor**: nome do vendedor, em string.
-7. **Local da compra**: Unidade federativa do local da compra, tais como SP, PR, string.
-8. **Avaliação da compra**: nota do cliente para a compra, numero inteiro.
-9. **Tipo de pagamento**: opções de pagamento que a rede de lojas oferece, cartão de crédito, boletos, cupom e cartão de débito. string.
-10. **Quantidade de parcelas**: número de parcelas, numero inteiro.
-11. **lat**: Latitude - medidas geolocalização float
-12. **lon**: Longitude
+
+| Nome da Coluna | Conteúdo | Tipo de dado |
+| ---------------------- | ---------------------- | ---------------------- |
+|  **Produto**   | Nome do produto disponível para venda [Ex. Mesa de Jantar]   | String[Texto]  |
+|  **Categoria do Produto**   | Nome das categorias dos produtos disponíveis para venda [Móveis, Eletrônicos]   | String[Texto]  |
+|  **Preço**   | Preço dos produtos disponíveis para venda    | Float[Decimal]  |
+|  **Frete**   | Frete dos produtos disponíveis para venda   | Float[Decimal]  |
+|  **Vendedor**   | Nome do vendedor responsável pela venda | String[Texto]  |
+|  **Local da compra**   | Sigla da Unidade Federativa do local de compra [SP, PR]   | String[Texto]  |
+|  **Avaliação da compra**   | Nota do cliente para a compra [1, 2, 3, 4, 5]   | Int[Número inteiro]  |
+|  **Tipo de pagamento**   | Nome das opções de pagamento que a rede aceita [cartão de crédito, boletos, cupom, cartão de débito]   | String[Texto]  |
+|  **Quantidade de parcelas**   | Número de parcelas disponíveis para pagamento [1 - 24]   | Int[Número inteiro]  |
+|  **lat**   | Latitude do local de compra    | Float[Decimal]  |
+|  **lon**   | Longitude do local de compra   | Float[Decimal]  |
 
 #### Formato dos arquivos
-* A loja 1 possui uma base de dados com 12 colunas e 2359 vendas (linhas)
-* A loja 2 possui uma base de dados com 12 colunas e 2359 vendas (linhas)
-* A loja 3 possui uma base de dados com 12 colunas e 2359 vendas (linhas)
-* A loja 4 possui uma base de dados com 12 colunas e 2358 vendas (linhas)
 
-
+| Unidade | Colunas | Linhas|
+| ---------------------- | ---------------------- | ---------------------- |
+| **Loja 1**| 12 | 2359 |
+| **Loja 2**| 12 | 2359 |
+| **Loja 3**| 12 | 2359 |
+| **Loja 4**| 12 | 2358 |
+| **Total**| - | 9435 |
 
 ## Métricas
-Foram solicitadas a análises das métricas: 
-
+A análise considerará as seguintes métricas:
 *   Faturamento total das lojas
 *   Categorias de produtos mais e menos vendidas
 *   Média das avaliações de clientes por loja
 *   Produtos mais e menos vendidos
 *   Frete médio de cada loja
 
-## Procedimentos aplicados
-O desenvolvimento do notebook (Google Colab) foi realizado na linguagem Python, utilizando a biblioteca Pandas - para análise -  e Matplotlib - para criação de gráficos. 
+## Procedimentos iniciais
+Desenvolvimento realizado na linguagem Python, utilizando a biblioteca Pandas e Matplotlib. Os códigos foram escritos e executados na plataforma online Google Colab, assim como o relatório final. 
 
 *Passos iniciais*: 
 * Importação e leitura dos dados
@@ -47,9 +50,9 @@ O desenvolvimento do notebook (Google Colab) foi realizado na linguagem Python, 
 *Reconhecimento dos dados*
 * Número de linhas e colunas (funçõesshape/len)
 * Avaliação de nulos (função info): Pela interferência negativa que podem causar, é preciso fazer o tratamento de dados nulos
-* Verificações da frequencia de cada valor por coluna (função value_counts); contagem, número de valores únicos, mais frequentes, frequencia do mais frequente (função describe)
+* Verificações da frequência de cada valor por coluna (função value_counts); contagem, número de valores únicos, mais frequentes, frequência do mais frequente (função describe)
 * Verificação do meses de 2023 (set : identifica valores únicos)
-* Frequencia, média, desvio padrão, valor mínimo e máximo e quartis (função describe aplicada ao dataframe)
+* Frequência, média, desvio padrão, valor mínimo e máximo e quartis (função describe aplicada ao dataframe)
 * Agrupamentos (groupby) e seleções (query)
 
 ## Análises ##
@@ -76,6 +79,7 @@ O desenvolvimento do notebook (Google Colab) foi realizado na linguagem Python, 
 
 
 Desenvolvido por Lúcia Helena Aparecida Rissi Salvi  - Módulo I Data Science Oracle Next Education | G9.
+
 
 
 
