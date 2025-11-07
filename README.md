@@ -77,8 +77,19 @@ Desenvolvimento realizado na linguagem Python, utilizando a biblioteca Pandas e 
 * Percentual do frete gratuito
 * Frete médio sem frete gratuito por loja
 
+### Como executar o notebook
+Faça o download do arquivo. 
+Abra o Google Colab. 
+Faça o upload do arquivo. 
+No menu "Ambiente de Execução" >> Executar tudo ou Ctrl + F9
+
+### Insights
+O primeiro passo para ter ideias sobre os padrões, é preciso conhecer os dados. Por isso, na exploração inicial, foi possível descobrir a amplitude temporal (por exemplo, que o ano de 2023 continha dados apenas do primeiro trimestre), correlação de preço e frete, e como se comportaram as vendas, o faturamento e o ticket médio durante os anos. 
+
+Foram criados gráficos utilizando a biblioteca Matplotlib: Gráficos de barras, gráficos de linhas, gráfico de pizza, violin plot, mapa de calor.
 
 Desenvolvido por Lúcia Helena Aparecida Rissi Salvi  - Módulo I Data Science Oracle Next Education | G9.
+
 
 
 
